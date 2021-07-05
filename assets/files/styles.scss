@@ -447,9 +447,12 @@ nav{
             cursor: default!important;
             button{
                 &:hover{
-                    @include btn();
-                    @include btnBorder();
                     transition: background 200ms ease-in-out;
+                }
+                svg{
+                    &:hover{
+                        stroke-dashoffset: 160%!important;
+                    }
                 }
             }
         }
@@ -489,15 +492,22 @@ nav{
                 }
                 button{
                     @include mqMax(576px){
-                        left: 3em;
+                        left: 2.5em;
                         bottom: .1em;
                         padding: .6em!important;
                     }
                     position: absolute;
                     bottom: .5em;
-                    left: 7.5em;
+                    left: 5.5em;
                     z-index: 6;
                     cursor: pointer;
+                    @include btn();
+                    @include btnBorder();
+                    svg{
+                        &:hover{
+                            stroke-dashoffset: 1%;
+                        }
+                    }
                 }
             }
         }

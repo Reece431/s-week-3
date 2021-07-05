@@ -646,31 +646,12 @@ nav .login {
 }
 
 .bottom .carouselWrapper .slick-current button:hover {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background: transparent;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  font-family: 'Baloo Da', sans-serif;
-  font-weight: 800;
-  font-size: 1em;
-  text-transform: uppercase;
-  border-radius: 50em;
-  vertical-align: middle;
-  margin: 0 0.125rem;
-  border: 0 none;
-  letter-spacing: -0.075em;
-  padding: .6em 1.5em;
-  cursor: pointer;
-  color: #1A252C;
-  -webkit-transition: background .5s ease-in-out;
-  transition: background .5s ease-in-out;
-  background: -webkit-gradient(linear, left bottom, left top, from(#d3812e), to(#e6b33e));
-  background: linear-gradient(0deg, #d3812e 0%, #e6b33e 100%);
   -webkit-transition: background 200ms ease-in-out;
   transition: background 200ms ease-in-out;
+}
+
+.bottom .carouselWrapper .slick-current button svg:hover {
+  stroke-dashoffset: 160% !important;
 }
 
 .bottom .carouselWrapper .carousel {
@@ -729,17 +710,44 @@ nav .login {
 .bottom .carouselWrapper .carousel .item button {
   position: absolute;
   bottom: .5em;
-  left: 7.5em;
+  left: 5.5em;
   z-index: 6;
   cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: 'Baloo Da', sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 50em;
+  vertical-align: middle;
+  margin: 0 0.125rem;
+  border: 0 none;
+  letter-spacing: -0.075em;
+  padding: .6em 1.5em;
+  cursor: pointer;
+  color: #1A252C;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d3812e), to(#e6b33e));
+  background: linear-gradient(0deg, #d3812e 0%, #e6b33e 100%);
 }
 
 @media only screen and (max-width: 576px) {
   .bottom .carouselWrapper .carousel .item button {
-    left: 3em;
+    left: 2.5em;
     bottom: .1em;
     padding: 0.6em !important;
   }
+}
+
+.bottom .carouselWrapper .carousel .item button svg:hover {
+  stroke-dashoffset: 1%;
 }
 
 .bottom footer {
